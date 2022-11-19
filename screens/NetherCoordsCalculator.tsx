@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { Text, TextInput, StyleSheet, Button, Pressable } from 'react-native';
+import { Text, TextInput, StyleSheet, Pressable } from 'react-native';
+import { Button } from 'react-native-paper';
 function NetherCoordsCalculator() {
   const [overworldX, setOverworldX] = React.useState('');
   const [overworldZ, setOverworldZ] = React.useState('');
@@ -42,7 +43,9 @@ function NetherCoordsCalculator() {
       <Pressable style={styles.button} onPress={calculateNetherCoords}>
         <Text style={styles.textWhite}>Calculate</Text>
       </Pressable>
-
+      <Button mode="contained">
+        Press me
+      </Button>
       {/* display nether coordinates */}
       <Text style={styles.text}>Nether Coordinates: {netherX}, {netherZ}</Text>
     </>
