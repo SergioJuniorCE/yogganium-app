@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Text, TextInput, StyleSheet, Pressable } from 'react-native';
 import { Button } from 'react-native-paper';
 function NetherCoordsCalculator() {
-  const [overworldX, setOverworldX] = React.useState('');
-  const [overworldZ, setOverworldZ] = React.useState('');
+  const [overworldX, setOverworldX] = useState('');
+  const [overworldZ, setOverworldZ] = useState('');
 
-  const [netherX, setNetherX] = React.useState(0);
-  const [netherZ, setNetherZ] = React.useState(0);
+  const [netherX, setNetherX] = useState(0);
+  const [netherZ, setNetherZ] = useState(0);
 
   // useEffect(() => {
   //   if (overworldX === '' || overworldZ === '') {
